@@ -39,3 +39,7 @@ function weightByVolume(outD,insD,height,density){
 function furnaceWeightToLabor(pPerLB,weight,burdenRate){
 	return (pPerLB*weight)/burdenRate;
 }
+
+function roundByPlace(number,decimalPlaces){
+	return Math.round(number*Math.pow(10,decimalPlaces))/Math.pow(10,decimalPlaces); 
+}
