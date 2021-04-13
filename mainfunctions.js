@@ -35,3 +35,7 @@ function cylinderVolume(outD,insD,height){
 function weightByVolume(outD,insD,height,density){
   return cylinderVolume(outD,insD,height)*density;
 }
+
+function furnaceWeightToLabor(pPerLB,weight,burdenRate){
+	return (pPerLB*weight)/burdenRate;
+}
